@@ -1,5 +1,12 @@
 $box-grid:          8px;
 
+$box-sm:            $box-grid * 96;
+$box-md:            $box-grid * 105;
+$box-lg:            $box-grid * 128;
+$box-mq-sm:         "(max-width: #{$box-sm})";
+$box-mq-md:         "(min-width: #{$box-md})";
+$box-mq-lg:         "(min-width: #{$box-lg})";
+
 $box-bg:            #fff;
 $box-color:         #505666;
 $box-border:        0;

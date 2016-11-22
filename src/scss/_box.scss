@@ -8,9 +8,9 @@
 .box-header {
   border-bottom: $box-header-border;
   color: $box-header-color;
-  height: $box-grid * 8;
-  line-height: $box-grid * 4;
-  padding: $box-grid * 2 $box-grid * 3;
+  height: $box-grid * 7;
+  line-height: $box-grid * 3;
+  padding: $box-grid * 2 $box-grid * 2;
   position: relative;
 }
 .box-header-title {
@@ -23,7 +23,7 @@
   width: 70%;
 
   &.box-header-title--padding {
-    padding-left: $box-grid * 2
+    padding-left: $box-grid * 3
   }
 }
 .box-header-collapse-icon {
@@ -31,7 +31,7 @@
   display: none;
   position: absolute;
   left: $box-grid * 1.25;
-  top: $box-grid * 2.5;
+  top: $box-grid * 2;
 
   &.show {
     display: inline-block;
@@ -39,9 +39,9 @@
 }
 .box-header-actions {
   list-style: none;
-  height: $box-grid * 8;
+  height: $box-grid * 7;
   margin: 0;
-  padding: $box-grid * 1.5 $box-grid;
+  padding: $box-grid 0;
   position: absolute;
   right: 0;
   top: 0;
@@ -63,14 +63,56 @@
   color: $box-body-color;
 
   &.box-body--padding {
-    padding: $box-grid * 3;
+    padding: $box-grid * 2;
   }
 }
 .box-footer {
   border-top: $box-footer-border;
   color: $box-footer-color;
-  height: $box-grid * 7;
+  height: $box-grid * 6;
   line-height: $box-grid * 3;
-  padding: $box-grid * 2 $box-grid * 3;
+  padding: $box-grid * 1.5 $box-grid * 2;
   position: relative;
+}
+
+@media #{$box-mq-sm} and (orientation: landscape) {
+  .box-header {
+    height: $box-grid * 6;
+    line-height: $box-grid * 3;
+    padding: $box-grid * 1.5 $box-grid * 2;
+  }
+  .box-header-collapse-icon {
+    top: $box-grid * 1.5;
+  }
+  .box-header-actions {
+    height: $box-grid * 6;
+    padding: $box-grid / 2 0;
+  }
+}
+
+@media #{$box-mq-md} {
+  .box-header {
+    height: $box-grid * 8;
+    line-height: $box-grid * 4;
+    padding: $box-grid * 2 $box-grid * 3;
+  }
+  .box-header-collapse-icon {
+    left: $box-grid * 2;
+    top: $box-grid * 2.5;
+  }
+  .box-header-actions {
+    height: $box-grid * 8;
+    padding: $box-grid * 1.5 $box-grid;
+  }
+  .box-header-title.box-header-title--padding {
+    padding-left: $box-grid * 3.5
+  }
+  .box-body.box-body--padding {
+    padding: $box-grid * 3;
+  }
+  .box-footer {
+    height: $box-grid * 7;
+    line-height: $box-grid * 3;
+    padding: $box-grid * 2 $box-grid * 3;
+  }
 }
