@@ -1,0 +1,30 @@
+{
+  "name": "jquery-scss-box",
+  "homepage": "https://github.com/eumatheusgomes/box",
+  "authors": [
+    "Matheus Gomes <eu@matheusgomes.com.br> (http://matheusgomes.com.br)"
+  ],
+  "description": "A simple SCSS + jQuery box component.",
+  "main": [
+    "src/scss/main.scss",
+    "src/js/box.js"
+  ],
+  "keywords": [
+    "box",
+    "card"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "devDependencies": {
+    "qunit": "^2.0.1",
+    "blanket": "^1.1.7"
+  },
+  "dependencies": {
+    "jquery": "^1.12.4"
+  }
+}

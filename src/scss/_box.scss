@@ -1,0 +1,76 @@
+.box {
+  background: $box-bg;
+  border: $box-border;
+  border-radius: $box-radius;
+  box-shadow: $box-shadow;
+  margin-bottom: $box-grid * 2;
+}
+.box-header {
+  border-bottom: $box-header-border;
+  color: $box-header-color;
+  height: $box-grid * 8;
+  line-height: $box-grid * 4;
+  padding: $box-grid * 2 $box-grid * 3;
+  position: relative;
+}
+.box-header-title {
+  display: block;
+  font-size: $box-header-size;
+  font-weight: $box-header-weight;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+
+  &.box-header-title--padding {
+    padding-left: $box-grid * 2
+  }
+}
+.box-header-collapse-icon {
+  color: lighten($box-header-color, 30);
+  display: none;
+  position: absolute;
+  left: $box-grid * 1.25;
+  top: $box-grid * 2.5;
+
+  &.show {
+    display: inline-block;
+  }
+}
+.box-header-actions {
+  list-style: none;
+  height: $box-grid * 8;
+  margin: 0;
+  padding: $box-grid * 1.5 $box-grid;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  li {
+    float: right;
+    padding: 0
+  }
+  a {
+    color: lighten($box-header-color, 20);
+    display: block;
+    height: $box-grid * 5;
+    padding: $box-grid;
+    width: $box-grid * 5;
+  }
+}
+.box-body {
+  background: $box-body-bg;
+  color: $box-body-color;
+
+  &.box-body--padding {
+    padding: $box-grid * 3;
+  }
+}
+.box-footer {
+  border-top: $box-footer-border;
+  color: $box-footer-color;
+  height: $box-grid * 7;
+  line-height: $box-grid * 3;
+  padding: $box-grid * 2 $box-grid * 3;
+  position: relative;
+}

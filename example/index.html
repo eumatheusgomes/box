@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css">
+  <link rel='stylesheet' href='//fonts.googleapis.com/icon?family=Material+Icons' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../dist/box.min.css" type="text/css">
+  <title>Box</title>
+  <style type="text/css">
+  *, *:before, *:after {
+    box-sizing: border-box
+  }
+  body {
+    background: #eee;
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+  .container {
+    max-width: 512px;
+    margin: auto;
+    padding: 24px 8px;
+    width: 100%;
+  }
+  p {
+    line-height: 1.5;
+    margin: 0
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" data-box>
+      <div class="box-header" data-box-collapse-toggle>
+        <span class="box-header-collapse-icon" data-box-collapse-icon>
+          <i class="material-icons">arrow_drop_down</i>
+        </span>
+        <span class="box-header-collapse-icon show" data-box-collapse-icon>
+          <i class="material-icons">arrow_drop_up</i>
+        </span>
+
+        <span
+          class="box-header-title box-header-title--padding"
+          title="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
+        >
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        </span>
+
+        <ul class="box-header-actions">
+          <li><a href="javascript:;"><i class="material-icons">more_vert</i></a></li>
+          <li><a href="javascript:;"><i class="material-icons">info</i></a></li>
+        </ul>
+      </div>
+
+      <div data-box-collapse-content>
+        <div class="box-body box-body--padding">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <div class="box-footer">
+          Excepteur sint occaecat
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../dist/box.min.js"></script>
+  <script>$('[data-box]').box();</script>
+</body>
+</html>
