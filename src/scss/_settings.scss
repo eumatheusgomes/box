@@ -1,27 +1,27 @@
-$box-grid:          8px;
+$box-grid:          8px                           !default;
 
-$box-sm:            $box-grid * 96;
-$box-md:            $box-grid * 105;
-$box-lg:            $box-grid * 128;
-$box-mq-sm:         "(max-width: #{$box-sm})";
-$box-mq-md:         "(min-width: #{$box-md})";
-$box-mq-lg:         "(min-width: #{$box-lg})";
+$box-sm:            $box-grid * 96                !default;
+$box-md:            $box-grid * 105               !default;
+$box-lg:            $box-grid * 128               !default;
+$box-mq-sm:         "(max-width: #{$box-sm})"     !default;
+$box-mq-md:         "(min-width: #{$box-md})"     !default;
+$box-mq-lg:         "(min-width: #{$box-lg})"     !default;
 
-$box-bg:            #fff;
-$box-color:         #505666;
-$box-border:        0;
-$box-radius:        4px;
-$box-shadow:        0 2px 2px rgba(0, 0, 0, .15);
+$box-bg:            #fff                          !default;
+$box-color:         #505666                       !default;
+$box-border:        0                             !default;
+$box-radius:        4px                           !default;
+$box-shadow:        0 2px 2px rgba(0, 0, 0, .15)  !default;
 
-$box-header-bg:     transparent;
-$box-header-color:  $box-color;
-$box-header-border: 1px solid #ddd;
-$box-header-size:   $box-grid * 2.5;
-$box-header-weight: 400;
+$box-header-bg:     transparent                   !default;
+$box-header-color:  $box-color                    !default;
+$box-header-border: 1px solid #ddd                !default;
+$box-header-size:   $box-grid * 2.5               !default;
+$box-header-weight: 400 !default;
 
-$box-body-bg:       transparent;
-$box-body-color:    $box-color;
+$box-body-bg:       transparent                   !default;
+$box-body-color:    $box-color                    !default;
 
-$box-footer-bg:     transparent;
-$box-footer-color:  $box-color;
-$box-footer-border: $box-header-border;
+$box-footer-bg:     transparent                   !default;
+$box-footer-color:  $box-color                    !default;
+$box-footer-border: $box-header-border            !default;
