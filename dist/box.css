@@ -54,6 +54,8 @@
 .box-body {
   background: transparent;
   color: #505666; }
+  .box-body.box-body--scroll {
+    overflow: auto; }
   .box-body.box-body--padding {
     padding: 16px; }
 

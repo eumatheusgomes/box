@@ -62,6 +62,9 @@
   background: $box-body-bg;
   color: $box-body-color;
 
+  &.box-body--scroll {
+    overflow: auto
+  }
   &.box-body--padding {
     padding: $box-grid * 2;
   }
